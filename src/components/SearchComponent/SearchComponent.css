@@ -1,0 +1,20 @@
+input {
+    width: 300px !important;
+}
+
+@media screen and (max-width: 425px) {
+    input {
+        width: 250px !important;
+    }
+}
+
+.TableWrapper {
+    margin-top: 6px;
+    margin-bottom: -12px;
+}
+
+@media screen and (max-width: 550px) {
+    .TableWrapper {
+        margin-bottom: 6px;
+    }
+}

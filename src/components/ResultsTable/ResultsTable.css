@@ -1,0 +1,18 @@
+.Bold {
+    font-weight: 800;
+}
+
+@media screen and (max-width: 400px) {
+    thead tr th:first-child {
+        display: none !important;
+    }
+
+    tbody tr td:first-child {
+        display: none !important;
+    }
+
+}
+
+tbody tr:last-child {
+    display: none !important;
+}
