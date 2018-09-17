@@ -1,6 +1,6 @@
 {
   "name": "recs",
-  "homepage": "https://www.hourofhistory.com/recs-testing",
+  "homepage": "https://www.hourofhistory.com/recs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
