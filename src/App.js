@@ -4,7 +4,6 @@ import axios from 'axios';
 import ResultsTable from './components/ResultsTable/ResultsTable';
 import SearchComponent from './components/SearchComponent/SearchComponent';
 
-
 class App extends Component {
   state = {
     posts: [],
@@ -14,7 +13,7 @@ class App extends Component {
     loadError: false,
     inputString: null
   }
-
+  
   componentWillMount () {
     console.log("[App.js] ComponentDidMount Called")
     const HOH_POSTS_URL = 'https://www.hourofhistory.com/wp-json/wp/v2/posts/?per_page=25';
@@ -112,6 +111,7 @@ class App extends Component {
               height="100px"
               width="100px" />
             <h1 className="App-title">Recommendations</h1>
+            <a className="SourceCode" href="https://github.com/james0r/recs-reactjs/tree/master/">View Source Code</a>
           </header>
           <div className="Filter-Section">
             <div className="SearchInputContainer">

@@ -17,8 +17,20 @@ body {
   color: white;
 }
 
+.SourceCode {
+  font-size: 12px;
+  color: white;
+  margin: 0;
+}
+
+.SourceCode:hover {
+  text-decoration: none;
+  color: #860D0D;
+}
+
 .App-title {
   font-size: 1.5em;
+  margin-bottom: 0;
 }
 
 .App-intro {
