@@ -12,9 +12,9 @@ class ResultsTable extends Component {
     render () {
     
         return (
-            <div style={{textAlign: 'center'}}>
-                <Table className="table">
-                    <thead>
+            <React.Fragment>
+                <Table className="table table-responsive table-bordered" style={{}}>
+                    <thead className="thead-light">
                         <tr>
                             <th scope="col">Date</th>
                             <th scope="col">Episode Title</th>
@@ -41,7 +41,7 @@ class ResultsTable extends Component {
                     <img style={{transform: 'translateY(-2px)'}}height="32px" src={logo}>
                     </img>
                 </footer>
-            </div>
+            </React.Fragment>
         )
     }
 }
