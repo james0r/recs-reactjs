@@ -92,7 +92,7 @@ class App extends Component {
     if (this.state.errorMessage) {
       return (
         <div className="ErrorContainer">
-           <img src={HOH_Logo} height="150" width="150"></img>
+           <img src={HOH_Logo} height="150" width="150" alt="Hour of History Logo"></img>
           <p style={{marginTop: '2em'}}>{this.state.errorMessage}</p>
         </div>
       )
@@ -102,7 +102,7 @@ class App extends Component {
       return (
         <div className="App">
           <header className="App-header">
-            <img src={HOH_Logo} height="150" width="150"></img>
+            <img src={HOH_Logo} height="150" width="150" alt="Hour of History Logo"></img>
             <h1 className="App-title">Recommendations</h1>
             <a className="SourceCode" href="https://github.com/james0r/recs-reactjs/tree/master/">View Source Code</a>
           </header>
