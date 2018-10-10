@@ -4,9 +4,6 @@ This app was written by James Auble for The Hour of History Podcast. It simply f
 
 Technologies used by this app are:
 
-React
-Axios
-Bootstrap
-& of course all of the under the hood tools used by Create-react-app.
+React, Axios, Bootstrap, and of course all of the under the hood tools used by Create-react-app.
 
 Thanks for checking out the repository and feel free to make a pull request if you have something to add or file an issue if you got one!
