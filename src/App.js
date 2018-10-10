@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import ResultsTable from './components/ResultsTable/ResultsTable';
 import SearchComponent from './components/SearchComponent/SearchComponent';
+import HOH_Logo from './assets/images/hoh-logo-300.png';
 
 class App extends Component {
   state = {
@@ -91,11 +92,7 @@ class App extends Component {
     if (this.state.errorMessage) {
       return (
         <div className="ErrorContainer">
-            <img src="https://www.hourofhistory.com/wp-content/uploads/2018/04/Mosaic_thumb_mock3.png" 
-          className="App-logo" 
-          alt="logo" 
-          height="100px"
-          width="100px" />
+           <img src={HOH_Logo} height="150" width="150"></img>
           <p style={{marginTop: '2em'}}>{this.state.errorMessage}</p>
         </div>
       )
@@ -105,11 +102,7 @@ class App extends Component {
       return (
         <div className="App">
           <header className="App-header">
-            <img src="https://www.hourofhistory.com/wp-content/uploads/2018/04/Mosaic_thumb_mock3.png" 
-              className="App-logo" 
-              alt="logo" 
-              height="100px"
-              width="100px" />
+            <img src={HOH_Logo} height="150" width="150"></img>
             <h1 className="App-title">Recommendations</h1>
             <a className="SourceCode" href="https://github.com/james0r/recs-reactjs/tree/master/">View Source Code</a>
           </header>

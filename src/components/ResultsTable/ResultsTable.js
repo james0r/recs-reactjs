@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './ResultsTable.css';
 import TableRow from './TableRow/TableRow'
 import { Table } from 'reactstrap';
-import logo from '../../logo.svg';
+import logo from '../../assets/images/react-logo.svg';
 
 class ResultsTable extends Component {
     state = {
