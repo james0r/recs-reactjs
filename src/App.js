@@ -102,7 +102,7 @@ class App extends Component {
       return (
         <div className="App">
           <header className="App-header">
-            <img src={HOH_Logo} height="150" width="150" alt="Hour of History Logo"></img>
+            <a href="https://www.hourofhistory.com"><img src={HOH_Logo} height="150" width="150" alt="Hour of History Logo"></img></a>
             <h1 className="App-title">Recommendations</h1>
             <a className="SourceCode" href="https://github.com/james0r/recs-reactjs/tree/master/">View Source Code</a>
           </header>
