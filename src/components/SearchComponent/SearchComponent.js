@@ -16,16 +16,6 @@ class SearchComponent extends Component {
         this.props.updateTable(value);
     })
 
-    handleSubmit = ((event) => {
-        event.preventDefault();
-        this.props.updateTable(this.state.inputValue);
-    })
-
-    handleKeyPress = ((value) => {
-        console.log("handleKeyUp called with event value " + value);
-        this.props.updateTable(value);
-    })
-
     render () {
         return (
             <div className="TableWrapper">
@@ -35,8 +25,11 @@ class SearchComponent extends Component {
                         <input 
                             ref={(input) => {this.nameInput = input}}
                             className="form-control mr-sm-2"
+                            onKeyDown={(event) => {
+                                event.key === 'Enter' ? event.preventDefault() : event;
+                            }}
                             onKeyUp={(event) => {
-                                this.handleChange(event.target.value)
+                                event.key !== 'Enter' ? this.handleChange(event.target.value) : null;
                             }}
                             type="search" 
                             placeholder="Filter" 

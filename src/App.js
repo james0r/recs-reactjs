@@ -3,7 +3,6 @@ import './App.css';
 import axios from 'axios';
 import ResultsTable from './components/ResultsTable/ResultsTable';
 import SearchComponent from './components/SearchComponent/SearchComponent';
-import Logo from './assets/images/hoh-logo.png';
 
 class App extends Component {
   state = {
@@ -16,7 +15,6 @@ class App extends Component {
   }
   
   componentWillMount () {
-    console.log("[App.js] ComponentDidMount Called")
     const HOH_POSTS_URL = 'https://www.hourofhistory.com/wp-json/wp/v2/posts/?per_page=25';
     
     let postsArray;
@@ -38,8 +36,6 @@ class App extends Component {
             Amazon_Links: replacedString
           }
         })
-        console.log("postsArray is :");
-        console.log(postsArray);
         this.setState({posts: postsArray});
         this.setState({loading: false});
       })
@@ -95,7 +91,7 @@ class App extends Component {
            <a href="https://www.hourofhistory.com">
               <img 
                 src="./assets/images/hoh-logo.png" 
-                srcset="./assets/images/hoh-logo.png 1x, ./assets/images/hoh-logo@2x 2x" 
+                srcSet="./assets/images/hoh-logo.png 1x, ./assets/images/hoh-logo@2x 2x" 
                 height="150" 
                 width="150" 
                 alt="Hour of History Logo">
@@ -113,7 +109,7 @@ class App extends Component {
             <a href="https://www.hourofhistory.com">
               <img 
                 src={require('./assets/images/hoh-logo.png')}
-                srcset={`${require('./assets/images/hoh-logo.png')} 1x, ${require('./assets/images/hoh-logo@2x.png')} 2x`}
+                srcSet={`${require('./assets/images/hoh-logo.png')} 1x, ${require('./assets/images/hoh-logo@2x.png')} 2x`}
                 height="150" 
                 width="150" 
                 alt="Hour of History Logo">
