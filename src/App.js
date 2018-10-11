@@ -3,7 +3,7 @@ import './App.css';
 import axios from 'axios';
 import ResultsTable from './components/ResultsTable/ResultsTable';
 import SearchComponent from './components/SearchComponent/SearchComponent';
-import HOH_Logo from './assets/images/hoh-logo-300.png';
+import Logo from './assets/images/hoh-logo.png';
 
 class App extends Component {
   state = {
@@ -92,7 +92,15 @@ class App extends Component {
     if (this.state.errorMessage) {
       return (
         <div className="ErrorContainer">
-           <img src={HOH_Logo} height="150" width="150" alt="Hour of History Logo"></img>
+           <a href="https://www.hourofhistory.com">
+              <img 
+                src="./assets/images/hoh-logo.png" 
+                srcset="./assets/images/hoh-logo.png 1x, ./assets/images/hoh-logo@2x 2x" 
+                height="150" 
+                width="150" 
+                alt="Hour of History Logo">
+              </img>
+            </a>
           <p style={{marginTop: '2em'}}>{this.state.errorMessage}</p>
         </div>
       )
@@ -102,7 +110,15 @@ class App extends Component {
       return (
         <div className="App">
           <header className="App-header">
-            <a href="https://www.hourofhistory.com"><img src={HOH_Logo} height="150" width="150" alt="Hour of History Logo"></img></a>
+            <a href="https://www.hourofhistory.com">
+              <img 
+                src={require('./assets/images/hoh-logo.png')}
+                srcset={`${require('./assets/images/hoh-logo.png')} 1x, ${require('./assets/images/hoh-logo@2x.png')} 2x`}
+                height="150" 
+                width="150" 
+                alt="Hour of History Logo">
+              </img>
+            </a>
             <h1 className="App-title">Recommendations</h1>
             <a className="SourceCode" href="https://github.com/james0r/recs-reactjs/tree/master/">View Source Code</a>
           </header>

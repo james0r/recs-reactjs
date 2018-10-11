@@ -38,7 +38,7 @@ class ResultsTable extends Component {
                 </Table>
                 <footer className="">
                     <h5 style={{display: 'inline', fontWeight: '200'}}>Powered by React</h5>
-                    <img style={{transform: 'translateY(-2px)'}}height="32px" src={logo}>
+                    <img style={{transform: 'translateY(-2px)'}}height="32px" src={logo} alt="React.js Logo">
                     </img>
                 </footer>
             </React.Fragment>
