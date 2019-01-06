@@ -124,7 +124,7 @@ class App extends Component {
                 className="SearchComponent"
                 updateTable={this.tableUpdateHandler} />
             </div>
-            <div className="SearchTable">
+            <div className="ResultsTable">
               <ResultsTable 
                 data={this.state.filteredPosts ? this.state.filteredPosts : this.state.posts}
               />
