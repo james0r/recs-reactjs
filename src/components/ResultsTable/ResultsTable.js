@@ -13,7 +13,7 @@ class ResultsTable extends Component {
     
         return (
             <React.Fragment>
-                <Table className="table table-responsive table-bordered" style={{}}>
+                <Table className="table table-bordered" style={{}}>
                     <thead className="thead-light">
                         <tr>
                             <th scope="col">Date</th>
