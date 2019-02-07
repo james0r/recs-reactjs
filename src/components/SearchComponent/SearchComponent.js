@@ -32,8 +32,8 @@ class SearchComponent extends Component {
                                 event.key !== 'Enter' ? this.handleChange(event.target.value) : null;
                             }}
                             type="search" 
-                            placeholder="Filter" 
-                            aria-label="Filter"></input>
+                            placeholder="Search" 
+                            aria-label="Search"></input>
                     </form>
                 </nav>
             </div>
