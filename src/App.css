@@ -102,6 +102,7 @@ body {
   height: 40px;
   position: relative;
   top: 3em;
+  transform: translateX(-25%);
 }
 
 .cube1, .cube2 {

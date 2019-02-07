@@ -80,7 +80,7 @@ class App extends Component {
             <div className="cube1"></div>
             <div className="cube2"></div>
           </div>
-          <h5>Please wait while recent podcast data is gathered...</h5>
+          <h5>Loading Podcast Recommendations...</h5>
         </div>
       );
     }
