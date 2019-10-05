@@ -12,7 +12,6 @@ class SearchComponent extends Component {
     }
     
     handleChange = ((value) => {
-        console.log(value);
         this.props.updateTable(value);
     })
 

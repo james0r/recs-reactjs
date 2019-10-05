@@ -15,7 +15,7 @@ class App extends Component {
   }
   
   componentWillMount () {
-    const HOH_POSTS_URL = 'https://www.hourofhistory.com/wp-json/wp/v2/posts/?per_page=25';
+    const HOH_POSTS_URL = './../wp-json/wp/v2/posts/?per_page=25';
     
     let postsArray;
 
@@ -51,7 +51,6 @@ class App extends Component {
   tableUpdateHandler = ((inputString) => {
     //As name implies, this function will rerender the able on
     //keystrokes or explicit button click from the search component
-    console.log("tableUpdateHandler() called");
 
     if (inputString !== "") {
       let localArray;
@@ -62,10 +61,8 @@ class App extends Component {
                       || loweredTitle.includes(inputString.toLowerCase())
               )
           })
-      console.log(localArray);
       this.setState({filteredPosts: localArray});
     } else {
-      console.log("filterString eval'd to empty");
       let localArray = this.state.originalArray;
       this.setState({filteredPosts: localArray});
     }
@@ -90,8 +87,8 @@ class App extends Component {
         <div className="ErrorContainer">
            <a href="https://www.hourofhistory.com">
               <img 
-                src="./assets/images/hoh-logo.png" 
-                srcSet="./assets/images/hoh-logo.png 1x, ./assets/images/hoh-logo@2x 2x" 
+                src={require("./assets/images/hoh-logo.png")} 
+                srcSet={`${require('./assets/images/hoh-logo.png')} 1x, ${require('./assets/images/hoh-logo@2x.png')} 2x`}
                 height="150" 
                 width="150" 
                 alt="Hour of History Logo">
